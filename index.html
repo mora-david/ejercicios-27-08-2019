@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="d-flex justify-content-end">
+            <div>
+                <button class="btn btn-info mr-2">Mostrar solo 5 primeros</button>
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="filterSelect">
+                    <option value="all">Todos</option>
+                    <option value="men">Solo hombres</option>
+                    <option value="women">Solo Mujeres</option>
+                    <option value="adult">Mayores de edad</option>
+                    <option value="minor">Menores de edad</option>
+                </select>
+            </div>
+        </div>
+        <!-- Table -->
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre completo</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Género</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Contenido de la tabla -->
+            </tbody>
+        </table>
+        <!-- Data -->
+        <div class="row mt-5">
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        Son <span id="minor"></span> menores de edad
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body" id="adult">
+                        Son x Mayores de edad
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        Son x Mujeres
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        Son x hombres
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./explicacion.js"></script> -->
+    <script type="module" src="./metods.js"></script>
+</body>
+
+</html>
